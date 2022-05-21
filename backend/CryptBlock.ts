@@ -4,7 +4,7 @@ const DIFFICULTY = 3
 
 class CryptBlock {
     index: number
-    timestamp: number
+    timestamp: string
     nodeHash: string
     prevHash: string
     data: string

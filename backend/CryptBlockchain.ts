@@ -21,7 +21,7 @@ class CryptBlockchain{
     }
 
     startGenesisBlock(id){
-        return new CryptBlock(Date.now().toString(), `Started Process for ID: ${id}`, "Block 0: init", "100", "0")
+        return new CryptBlock(Date.now().toString(), "Block 0: init", "100", "0")
     }
 
     obtainLatestBlock(){
