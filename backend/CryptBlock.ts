@@ -3,6 +3,13 @@ const SHA256 = require('crypto-js/sha256')
 const DIFFICULTY = 3
 
 class CryptBlock {
+    index: number
+    timestamp: number
+    nodeHash: string
+    prevHash: string
+    data: string
+    nonce: number
+    hash: string
 
     constructor(timestamp, data, nodeHash, prevHash = "", index = 0, nonce = 0, hash = "") {
         this.index = index

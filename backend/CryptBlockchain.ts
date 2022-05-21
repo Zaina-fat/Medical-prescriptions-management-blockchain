@@ -4,6 +4,9 @@ const CryptBlock = require("./CryptBlock")
 const DIFFICULTY = 3
 
 class CryptBlockchain{
+    blockchain: Array<Object>
+    size: number
+
     constructor(id, blockchain = null){
         this.blockchain = [this.startGenesisBlock(id)]
         this.size = 1
